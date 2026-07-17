@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from pathlib import Path
 import joblib
 import plotly.express as px
 import plotly.graph_objects as go
@@ -63,14 +64,18 @@ hr{
 # LOAD FILES
 # ----------------------------------------
 
+from pathlib import Path
+
+BASE_DIR = Path(__file__).parent
+
 @st.cache_resource
 def load_models():
 
-    model = joblib.load("budget_cluster_model.pkl")
-    scaler = joblib.load("scaler.pkl")
-    pca = joblib.load("pca.pkl")
-    cluster_names = joblib.load("cluster_names.pkl")
-    feature_columns = joblib.load("feature_columns.pkl")
+    model = joblib.load(BASE_DIR / "budget_cluster_model.pkl")
+    scaler = joblib.load(BASE_DIR / "scaler.pkl")
+    pca = joblib.load(BASE_DIR / "pca.pkl")
+    cluster_names = joblib.load(BASE_DIR / "cluster_names.pkl")
+    feature_columns = joblib.load(BASE_DIR / "feature_columns.pkl")
 
     return model, scaler, pca, cluster_names, feature_columns
 
@@ -78,13 +83,12 @@ def load_models():
 @st.cache_data
 def load_data():
 
-    df = pd.read_csv("country_budget_profiles.csv")
+    df = pd.read_csv(BASE_DIR / "country_budget_profiles.csv")
 
     return df
 
 
 model, scaler, pca, cluster_names, feature_columns = load_models()
-
 data = load_data()
 # ----------------------------------------
 # SIDEBAR
