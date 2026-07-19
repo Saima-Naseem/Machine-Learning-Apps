@@ -44,7 +44,7 @@ st.title("Pakistan Budget Estimates Forecaster")
 # Load Trained Model
 # -----------------------------------------
 
-model = joblib.load("Pakistan_budget_predictor.pkl")
+model = joblib.load("pakistan_budget_predictor.pkl")
 feature_columns = joblib.load("feature_columns.pkl")
 # ==========================================
 # SIDEBAR
