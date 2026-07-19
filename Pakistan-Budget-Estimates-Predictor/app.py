@@ -45,13 +45,12 @@ st.title("Pakistan Budget Estimates Forecaster")
 # Load Trained Model
 # -----------------------------------------
 
-import os
+from pathlib import Path
 
-st.write("Current Working Directory:", os.getcwd())
-st.write("Files:", os.listdir())
+BASE_DIR = Path(__file__).resolve().parent
 
-model = joblib.load("pakistan_budget_predictor.pkl")
-feature_columns = joblib.load("feature_columns.pkl")
+model = joblib.load(BASE_DIR / "pakistan_budget_predictor.pkl")
+feature_columns = joblib.load(BASE_DIR / "feature_columns.pkl")
 
 st.success("✅ Model loaded successfully")
 st.success("✅ Feature columns loaded successfully")
