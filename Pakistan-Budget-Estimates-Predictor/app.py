@@ -40,12 +40,21 @@ st.markdown("""
 # -----------------------------------------
 
 st.title("Pakistan Budget Estimates Forecaster")
+
 # -----------------------------------------
 # Load Trained Model
 # -----------------------------------------
 
+import os
+
+st.write("Current Working Directory:", os.getcwd())
+st.write("Files:", os.listdir())
+
 model = joblib.load("pakistan_budget_predictor.pkl")
 feature_columns = joblib.load("feature_columns.pkl")
+
+st.success("✅ Model loaded successfully")
+st.success("✅ Feature columns loaded successfully")
 # ==========================================
 # SIDEBAR
 # ==========================================
