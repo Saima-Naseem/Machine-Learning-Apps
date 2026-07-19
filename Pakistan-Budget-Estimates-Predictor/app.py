@@ -52,8 +52,6 @@ BASE_DIR = Path(__file__).resolve().parent
 model = joblib.load(BASE_DIR / "pakistan_budget_predictor.pkl")
 feature_columns = joblib.load(BASE_DIR / "feature_columns.pkl")
 
-st.success("✅ Model loaded successfully")
-st.success("✅ Feature columns loaded successfully")
 # ==========================================
 # SIDEBAR
 # ==========================================
