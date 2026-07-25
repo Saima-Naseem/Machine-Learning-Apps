@@ -1,1 +1,30 @@
+# 💬 AI Review Sentiment Analyzer
 
+An end-to-end Machine Learning application that analyzes English customer reviews and predicts whether the expressed sentiment is **Positive 😊** or **Negative 😡**.
+
+The project demonstrates the complete Machine Learning workflow, from dataset preparation and text preprocessing to model training, evaluation, application development, GitHub version control, and cloud deployment using Streamlit.
+
+## 🚀 Live Application
+
+🔗 **Streamlit App:** [PASTE YOUR STREAMLIT APP LINK HERE]
+
+## 📂 Project Overview
+
+The **AI Review Sentiment Analyzer** is a binary text classification application built using Natural Language Processing (NLP) and Machine Learning.
+
+A user enters an English review into the application, and the trained model analyzes the text and predicts its sentiment.
+
+### The application workflow
+
+```text
+User Review
+     ↓
+Text Input
+     ↓
+TF-IDF Feature Extraction
+     ↓
+Logistic Regression Model
+     ↓
+Sentiment Prediction
+     ↓
+😊 Positive  /  😡 Negative
