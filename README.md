@@ -107,8 +107,6 @@ evidence-based decision-making in public finance, governance, and policy.
 **Kaggle: https://www.kaggle.com/drsaimanaseem**
 **https://asani.pk/profile/saima-naseem,-phd**
 
-Live Applications: https://ai-customer-review-sentiment.streamlit.app/
-
 **About Me**
 
 I am **Saima Naseem**, a researcher and AI practitioner with an academic and professional background in Political Science, women politica orientations, 
