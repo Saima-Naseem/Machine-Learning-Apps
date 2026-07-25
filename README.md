@@ -1,125 +1,145 @@
-**Machine Learning Apps**
+# Machine Learning Apps
 
 A growing collection of practical Machine Learning applications that I have trained, evaluated, and deployed as interactive web applications.
 
-This repository serves as a central hub for my Machine Learning projects, bringing together models developed through hands-on learning and practical experimentation.
-Each project focuses on applying Machine Learning to real-world datasets and transforming trained models into accessible applications.
+This repository serves as a central hub for my Machine Learning projects, bringing together hands-on work with real-world datasets, predictive modeling, classification, regression, clustering, and interactive application development.
 
-**About This Repository**
+My goal is to move beyond isolated notebooks and take Machine Learning projects through the complete journey from data preparation and model development to deployment and practical application.
 
-My journey into Machine Learning began with learning the fundamentals of Python, data preprocessing, model training, evaluation, and deployment.
-This repository documents that journey through working applications rather than isolated exercises. Each application is organized in its own folder and may include:
+## Repository Structure
 
-**Data preprocessing and preparation**
-**Model training and evaluation**
-**Trained model files**
-**Application code**
-**Supporting files and resources**
-**Deployment configuration**
-
-The applications are progressively evolving from foundational Machine Learning projects toward domain-specific solutions in areas such as
-public finance, budgeting, governance, and policy analytics.
-
-**Repository Structure**
+Each Machine Learning application is organized in its own folder and may include model files, application code, dependencies, supporting resources, and project documentation.
 
 Machine-Learning-Apps/
-project-1/
-app.py
-model files
-requirements.txt
-README.md
-Each project folder represents an individual Machine Learning application and may contain its own model files, application code, dependencies, and project documentation.
 
-**Machine Learning Approaches**
+├── project-1/
+│   ├── app.py
+│   ├── model files
+│   ├── requirements.txt
+│   └── README.md
+│
+├── project-2/
+│   ├── app.py
+│   ├── model files
+│   ├── requirements.txt
+│   └── README.md
+│
+├── project-3/
+│   └── ...
+│
+└── README.md
 
-The projects in this repository represent a progression from learning fundamental Machine Learning algorithms to developing practical, domain-focused applications.
-My current work includes supervised and unsupervised learning approaches such as:
+Each project can be explored independently through its dedicated folder and, where available, its deployed web application.
 
-**Linear Regression**
-**Multiple Linear Regression**
-**Decision Trees**
-**Random Forest**
-**K-Means Clustering**
-**Logistic Regression**
-**XGboost**
+## Machine Learning Approaches
 
-As my Machine Learning journey progresses, I will continue exploring additional algorithms, model optimization techniques, feature engineering,
-evaluation methods, and deployment practices.
+My current projects include a range of supervised and unsupervised learning techniques, including:
 
-**Technologies**
+* Linear Regression
+* Multiple Linear Regression
+* Logistic Regression
+* Decision Trees
+* Random Forest
+* K-Means Clustering
+* XGBoost
 
-The projects in this repository are developed using a range of data science and Machine Learning tools, including:
+As my work progresses, I will continue exploring additional algorithms, feature engineering techniques, model optimization, evaluation methods, and deployment practices.
 
-**Python**
-**Pandas**
-**NumPy**
-**Scikit-learn**
-**Matplotlib**
-**Seaborn**
-**Joblib**
-**Streamlit**
-**GitHub**
-Additional technologies and frameworks will be added as the projects evolve.
+## My Machine Learning Workflow
 
-**My Machine Learning Journey**
+My projects follow an end-to-end Machine Learning workflow that includes:
 
-The projects in this repository represent my progression from learning the foundations of Machine Learning to developing practical applications
-that address real-world problems. My journey has included working with:
+* Data collection and preparation
+* Data cleaning
+* Exploratory Data Analysis
+* Feature selection and engineering
+* Model training
+* Model comparison
+* Model evaluation
+* Model improvement
+* Model serialization
+* Application development
+* Model deployment
 
-**Data collection and preparation**
-**Data cleaning**
-**Exploratory Data Analysis**
-**Feature selection and engineering**
-**Model training**
-**Model comparison**
-**Model evaluation**
-**Model improvement**
-**Model serialization**
-**Application development**
-**Model deployment**
+My aim is to take each project through the complete journey:
 
-Rather than focusing only on training models in notebooks, my goal is to take each project through the complete journey:
-Data → Preprocessing → Model Training → Evaluation → Deployment → Real-World Application
+**Data → Preprocessing → Model Training → Evaluation → Deployment → Real-World Application**
 
-**Areas of Interest**
+## Technologies
 
-My future Machine Learning and Artificial Intelligence projects will increasingly focus on areas connected with my professional, academic,
-and research interests, particularly:
+The projects in this repository use a range of data science, Machine Learning, and deployment tools, including:
 
-**Public Finance**
-**Political Awareness In Women / Women's Political Participation**
-**Democratic Governance**
-**Policy Analytics**
-**Political Participation**
+* Python
+* Pandas
+* NumPy
+* Scikit-learn
+* XGBoost
+* Matplotlib
+* Seaborn
+* Joblib
+* Streamlit
+* GitHub
 
-Building upon my academic research on women's political awareness and exploring how Machine Learning can contribute to research on political participation,
-civic engagement, and inclusive governance.
+Additional technologies and frameworks will be introduced as the projects evolve.
 
-**Vision**
+## Areas of Interest
 
-My long-term goal is to explore the role of AI in political science research along with how Artificial Intelligence and Machine Learning can support
-evidence-based decision-making in public finance, governance, and policy.
+My Machine Learning and Artificial Intelligence work is increasingly focused on areas connected to my academic research, professional experience, and long-term research interests.
 
-**Explore My Work**
+### Public Finance and Budgeting
 
-**Website: https://saimanaseem.com**
-**LinkedIn: https://www.linkedin.com/in/saima-naseem1/**
-**Kaggle: https://www.kaggle.com/drsaimanaseem**
-**https://asani.pk/profile/saima-naseem,-phd**
+Exploring how Machine Learning can support public financial analysis, budget forecasting, and data-driven decision-making.
 
-**About Me**
+### Women's Political Awareness and Political Participation
 
-I am **Saima Naseem**, a researcher and AI practitioner with an academic and professional background in Political Science, women politica orientations, 
-and public finance in the Punjab province of Pakistan. My academic research focuses on women's political awareness, while my professional experience has
-given me practical exposure to government administration, budgeting, and public-sector processes.
+Building upon my academic research on women's political awareness and exploring how Machine Learning and data analytics can contribute to the study of political participation, civic engagement, and women's political orientations.
 
-I am currently developing my practical expertise in Machine Learning, Artificial Intelligence, Python, and NLP, with a long-term interest in applying AI
-to political science research and public finance.
+### Democratic Governance
 
-**Repository Status**
+Exploring how Artificial Intelligence and data-driven methods can contribute to better governance, public decision-making, and evidence-based policy analysis.
 
-This repository is continuously evolving. New Machine Learning applications, experiments, and domain-specific projects will be added
-as I continue learning, building, and deploying. If you find these projects useful or interesting, feel free to explore the individual project folders,
-try the live applications, and connect with me through my website or LinkedIn.
+### Political Science Research
 
-Thank you for visiting my Machine Learning Apps repository.
+Exploring the application of Machine Learning, Artificial Intelligence, and data analytics to political science research and the study of social and political phenomena.
+
+## Vision
+
+My long-term goal is to explore the role of Artificial Intelligence and Machine Learning in political science research and their potential to support evidence-based decision-making in public finance, governance, and public policy.
+
+I am particularly interested in connecting **AI, Machine Learning, political science, public finance, and governance** to develop practical and research-oriented solutions for real-world challenges.
+
+> **AI informs. You decide.**
+
+## About Me
+
+I am **Saima Naseem**, a researcher and AI practitioner with an academic and professional background in Political Science, women's political awareness, public finance, budgeting, and public-sector administration in Punjab, Pakistan.
+
+My academic research focuses on women's political awareness and political participation, while my professional experience has provided me with practical exposure to government administration, budgeting, and public-sector processes.
+
+I am currently developing my expertise in Machine Learning, Artificial Intelligence, Python, and Natural Language Processing, with a long-term interest in applying AI to political science research, public finance, governance, and policy analysis.
+
+My work sits at the intersection of **AI, Machine Learning, political science, public finance, and evidence-based decision-making**.
+
+## Explore My Work
+
+**Website:**
+[https://saimanaseem.com](https://saimanaseem.com)
+
+**LinkedIn:**
+[https://www.linkedin.com/in/saima-naseem1/](https://www.linkedin.com/in/saima-naseem1/)
+
+**Kaggle:**
+[https://www.kaggle.com/drsaimanaseem](https://www.kaggle.com/drsaimanaseem)
+
+**Asani Profile:**
+[https://asani.pk/profile/saima-naseem,-phd](https://asani.pk/profile/saima-naseem,-phd)
+
+## Repository Status
+
+This repository is continuously evolving as I learn, build, evaluate, and deploy new Machine Learning applications.
+
+New projects will increasingly focus on practical and research-oriented applications related to **public finance, budgeting, political science, democratic governance, and policy analytics**.
+
+You are welcome to explore the individual project folders, try the available live applications, review the source code, and follow my ongoing Machine Learning journey.
+
+Thank you for visiting my **Machine Learning Apps** repository.
