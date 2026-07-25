@@ -1,1 +1,358 @@
+# 📊 AI Budget Clustering
 
+An end-to-end Machine Learning application that uses **K-Means Clustering** and **Principal Component Analysis (PCA)** to analyze and classify countries according to their government budget allocation patterns.
+
+The project uses country-level budget allocation percentages across major sectors to identify countries with similar spending patterns. The trained Machine Learning model is integrated into an interactive **Streamlit web application** where users can select a country, predict its budget cluster, explore its budget allocation profile, and visualize clustering patterns through an interactive PCA visualization.
+
+## 🚀 Live Application
+
+🔗 **Try the AI Budget Clustering App:**  
+YOUR_STREAMLIT_APP_LINK
+
+## 📂 GitHub Repository
+
+🔗 **Machine Learning Apps Repository:**  
+https://github.com/Saima-Naseem/Machine-Learning-Apps
+
+## 🎯 Project Objective
+
+Government budgets reflect a country's priorities, development strategy, and allocation of public resources.
+
+Countries may allocate different proportions of their budgets to sectors such as:
+
+- Defense
+- Education
+- Health
+- Infrastructure
+- Agriculture
+- State Transfers
+- Social Welfare
+- Administration and Other Services
+- Interest Payments
+
+The objective of this project is to use unsupervised Machine Learning to identify countries with similar government budget allocation patterns.
+
+Instead of manually categorizing countries, the Machine Learning model discovers natural patterns in the data and groups countries into different clusters.
+
+The Streamlit application then allows users to select a country and predict which budget allocation cluster it belongs to.
+
+## 🧠 Machine Learning Approach
+
+The project uses **K-Means Clustering**, an unsupervised Machine Learning algorithm.
+
+The overall workflow is:
+
+    Dataset
+       ↓
+    Data Cleaning
+       ↓
+    Feature Selection
+       ↓
+    Feature Scaling
+       ↓
+    K-Means Clustering
+       ↓
+    Cluster Profiles
+       ↓
+    PCA Dimensionality Reduction
+       ↓
+    Interactive Visualization
+       ↓
+    Streamlit Application
+       ↓
+    Cloud Deployment
+
+## 📊 Dataset
+
+The dataset contains country-level government budget allocation percentages across multiple sectors.
+
+The main features used for clustering include:
+
+- `Defense_Percentage`
+- `Education_Percentage`
+- `Health_Percentage`
+- `Interest_Payments_Percentage`
+- `Infrastructure_Percentage`
+- `Agriculture_Percentage`
+- `State_Transfers_Percentage`
+- `Social_Welfare_Percentage`
+- `Administration_and_Others_Percentage`
+
+These budget allocation percentages are used to identify similarities and differences between countries.
+
+## 🔍 Data Preparation
+
+Before training the model, the dataset was prepared through several steps:
+
+1. Loaded and explored the country budget dataset.
+2. Selected relevant budget allocation features.
+3. Removed non-feature columns from the clustering input.
+4. Prepared country-level budget profiles.
+5. Scaled numerical features using `StandardScaler`.
+6. Prepared the processed data for K-Means clustering.
+7. Trained and evaluated the clustering model.
+8. Saved the trained Machine Learning components using Joblib.
+
+Feature scaling was important because clustering algorithms based on distance can be affected when variables have different scales.
+
+## 🤖 K-Means Clustering
+
+The main Machine Learning algorithm used in this project is **K-Means Clustering**.
+
+K-Means groups observations into clusters based on similarities in their feature values.
+
+In this project, countries with similar budget allocation patterns are placed into the same cluster.
+
+The resulting clusters were interpreted and assigned descriptive names to make the Machine Learning results easier to understand.
+
+The application uses the following descriptive cluster profiles:
+
+- Balanced Allocation
+- Human Development
+- Defense Priority
+- Infrastructure Growth
+- Social Investment
+- Agricultural Focus
+- Diversified Economy
+
+These names are descriptive interpretations of the identified cluster patterns and are not official classifications of countries.
+
+## 📈 PCA Visualization
+
+The project uses **Principal Component Analysis (PCA)** to visualize high-dimensional budget allocation data.
+
+The original dataset contains multiple budget allocation features, making it difficult to visualize all dimensions simultaneously.
+
+PCA reduces the dimensionality of the data into a smaller number of principal components while preserving important patterns in the dataset.
+
+The Streamlit application provides an interactive PCA visualization that helps users explore the distribution of countries across different budget clusters.
+
+The visualization helps users understand:
+
+- Which countries have similar budget allocation patterns
+- How different clusters are distributed
+- Which countries appear closer or farther apart
+- How the selected country relates to other countries
+- The overall structure of the budget allocation data
+
+The selected country's position is highlighted to make interpretation easier.
+
+## 🌍 Application Features
+
+### 🏠 Home
+
+Provides an overview of the AI Budget Clustering application and explains the purpose of the project.
+
+### 🌍 Country Analysis
+
+Users can select a country and explore its budget allocation profile.
+
+The application displays the country's budget allocation across the selected sectors and predicts its corresponding budget cluster.
+
+### 🔍 Budget Cluster Prediction
+
+The application uses the trained K-Means model to predict the cluster of the selected country.
+
+The result includes:
+
+- Predicted cluster number
+- Cluster profile
+- Short cluster description
+- Budget allocation profile
+
+### 📊 Budget Allocation Visualization
+
+The application presents the selected country's budget allocation percentages through a visual chart.
+
+This allows users to quickly identify which sectors receive relatively higher or lower budget allocations.
+
+### 📈 PCA Visualization
+
+Users can explore an interactive PCA-based visualization of the country's position within the overall clustering structure.
+
+The visualization helps demonstrate similarities and differences between countries based on their budget allocation patterns.
+
+### ℹ️ About Model
+
+Provides information about the Machine Learning methodology, dataset, clustering approach, and application.
+
+## 💾 Saved Machine Learning Components
+
+The trained Machine Learning components are saved using **Joblib**.
+
+### `budget_cluster_model.pkl`
+
+Contains the trained K-Means clustering model used to predict the budget cluster of a selected country.
+
+### `scaler.pkl`
+
+Contains the fitted feature scaler used during model training and prediction.
+
+### `pca.pkl`
+
+Contains the fitted PCA model used for dimensionality reduction and visualization.
+
+### `cluster_names.pkl`
+
+Contains the descriptive names assigned to the identified clusters.
+
+### `feature_columns.pkl`
+
+Contains the feature list used to ensure consistency between model training and application prediction.
+
+## 🛠️ Technologies Used
+
+The project was developed using:
+
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Joblib
+- Matplotlib
+- Plotly
+- Streamlit
+- Git
+- GitHub
+- Streamlit Community Cloud
+
+## 📁 Project Structure
+
+    AI-Budget-Clustering/
+    │
+    ├── app.py
+    │
+    ├── BudgetClusterAI.ipynb
+    │
+    ├── country_budget_profiles.csv
+    │
+    ├── budget_cluster_model.pkl
+    ├── scaler.pkl
+    ├── pca.pkl
+    ├── cluster_names.pkl
+    ├── feature_columns.pkl
+    │
+    ├── requirements.txt
+    │
+    └── README.md
+
+### `app.py`
+
+The main Streamlit application containing the user interface, prediction functionality, data visualizations, and PCA visualization.
+
+### `BudgetClusterAI.ipynb`
+
+The Machine Learning development notebook containing the data preparation, feature selection, clustering analysis, model training, cluster interpretation, and PCA workflow.
+
+### `country_budget_profiles.csv`
+
+The country-level budget allocation dataset used by the application.
+
+### `.pkl` Files
+
+Saved Machine Learning objects required for prediction, preprocessing, cluster interpretation, and PCA visualization.
+
+### `requirements.txt`
+
+Contains the Python dependencies required to run the application.
+
+## ▶️ Run the Application Locally
+
+To run the application on your computer:
+
+### 1. Clone the repository
+
+    git clone https://github.com/Saima-Naseem/Machine-Learning-Apps.git
+
+### 2. Open the project folder
+
+    cd Machine-Learning-Apps/AI-Budget-Clustering
+
+### 3. Install the required dependencies
+
+    pip install -r requirements.txt
+
+### 4. Run the Streamlit application
+
+    streamlit run app.py
+
+The application will then open in your web browser.
+
+## ☁️ Deployment
+
+The application is deployed using **Streamlit Community Cloud**.
+
+🔗 **Live Application:**
+
+YOUR_STREAMLIT_APP_LINK
+
+The application is connected to the GitHub repository and can be updated through Git version control.
+
+## 💡 What I Learned
+
+This project was an important step in my journey from Machine Learning experimentation to building and deploying a complete end-to-end Machine Learning application.
+
+Throughout the project, I worked on:
+
+- Dataset exploration
+- Data preprocessing
+- Feature selection
+- Feature scaling
+- Unsupervised Machine Learning
+- K-Means clustering
+- Cluster interpretation
+- PCA dimensionality reduction
+- Interactive data visualization
+- Streamlit application development
+- Model serialization using Joblib
+- Git and GitHub version control
+- Dependency management
+- Cloud deployment
+
+The project also involved solving several real-world development challenges, including feature mismatches, PCA dimensionality errors, visualization issues, Streamlit UI customization, missing dependencies, and file path problems during cloud deployment.
+
+These challenges helped me understand that building a Machine Learning application involves much more than simply training a model. A successful ML project requires a complete workflow from data preparation and model development to application design, debugging, version control, and deployment.
+
+## 🔮 Future Improvements
+
+Future versions of the application could include:
+
+- Automated budget trend analysis
+- Country-to-country budget comparisons
+- Historical budget allocation analysis
+- Interactive cluster comparison
+- Additional economic and development indicators
+- More advanced clustering algorithms
+- Automatic cluster interpretation
+- Budget allocation recommendations
+- Integration with updated government budget datasets
+- Predictive analysis of future budget allocation patterns
+
+## ⚠️ Disclaimer
+
+The clusters generated by this application are based solely on patterns identified in the available budget allocation data.
+
+Cluster names such as "Defense Priority" or "Human Development" are descriptive interpretations created to make the Machine Learning results easier to understand. They do not represent official government classifications or policy judgments.
+
+The application is intended for educational, analytical, and exploratory purposes.
+
+## 👩‍💻 Author
+
+**Saima Naseem**
+
+Researcher | Political Scientist | Machine Learning Enthusiast | AI & Governance
+
+My interests include:
+
+- Artificial Intelligence
+- Machine Learning
+- Data Analysis
+- Public Policy
+- Governance
+- Government Budgeting
+- Political Science
+- Women and Political Awareness
+
+⭐ If you find this project interesting, feel free to explore the repository, try the live application, and share your feedback.
+
+Thank you for visiting!
