@@ -1,1 +1,82 @@
+# Pakistan Budget Estimates Forecaster
 
+An end-to-end Machine Learning project that uses historical Pakistan budget data to forecast budget estimates through an interactive Streamlit web application.
+
+## 🚀 Live Application
+
+🔗 **Streamlit App:** [Add your Streamlit App URL here]
+
+## 📌 Project Overview
+
+The **Pakistan Budget Estimates Forecaster** is a machine learning application developed to explore how historical budget data can be used for predictive analysis.
+
+The project takes historical Pakistan budget data, prepares and processes the dataset, trains multiple machine learning models, evaluates their performance, and deploys the selected model as an interactive web application.
+
+Users can provide relevant budget inputs through the Streamlit interface and receive a predicted budget estimate from the trained machine learning model.
+
+The project demonstrates a complete machine learning workflow, from data preparation and model experimentation to application development and cloud deployment.
+
+## 🎯 Objectives
+
+- Explore historical budget patterns in Pakistan.
+- Prepare financial data for machine learning.
+- Train and compare multiple machine learning algorithms.
+- Select the best-performing model for prediction.
+- Build an interactive prediction application.
+- Deploy the machine learning model online using Streamlit Community Cloud.
+- Demonstrate the practical application of AI and Machine Learning in public finance and budgeting.
+
+## 📊 Dataset
+
+The project uses a historical Pakistan budget dataset covering the period **1946–2026**.
+
+The dataset contains historical budget information and financial indicators used to train the predictive model.
+
+### Main Data Files
+
+- `pakistan_budget_1946_2026.csv` — Original historical dataset.
+- `pakistan_budget_processed.csv` — Cleaned and processed dataset used for machine learning.
+
+The data preparation process involved cleaning the dataset, selecting relevant features, and preparing the data in a format suitable for model training.
+
+## 🤖 Machine Learning Workflow
+
+The project followed a complete machine learning pipeline:
+
+1. **Data Collection**
+   - Historical Pakistan budget data was compiled into a structured dataset.
+
+2. **Data Cleaning**
+   - The dataset was reviewed and prepared for analysis.
+   - Relevant variables were selected and processed.
+
+3. **Feature Preparation**
+   - Features were prepared in the required format for model training.
+   - The final feature structure was saved for use by the deployed application.
+
+4. **Model Training**
+   - Six different machine learning models were trained and tested.
+
+5. **Model Evaluation**
+   - The models were evaluated and compared based on their predictive performance.
+
+6. **Model Selection**
+   - **Linear Regression** was selected as the final model based on the evaluation results.
+
+7. **Model Serialization**
+   - The trained model was saved using Joblib for later use in the Streamlit application.
+
+8. **Application Development**
+   - An interactive web interface was developed using Streamlit.
+
+9. **Deployment**
+   - The application was deployed on Streamlit Community Cloud.
+
+## 🧠 Final Model
+
+**Selected Algorithm:** Linear Regression
+
+The final trained model is stored in:
+
+```text
+pakistan_budget_predictor.pkl
