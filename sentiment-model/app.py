@@ -15,8 +15,8 @@ st.set_page_config(
 # Load Model
 # -----------------------------
 
-model = joblib.load("sentiment_model.pkl")
-vectorizer = joblib.load("tfidf_vectorizer.pkl")
+model = joblib.load("sentiment-model/sentiment_model.pkl")
+vectorizer = joblib.load("sentiment-model/tfidf_vectorizer.pkl")
 
 # -----------------------------
 # Simple Styling
